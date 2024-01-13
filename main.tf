@@ -4,7 +4,7 @@ resource "random_integer" "number1" {
 }
 
 resource "random_string" "name" {
-  length = 5
+  length = 7
 }
 
 output "name" {
