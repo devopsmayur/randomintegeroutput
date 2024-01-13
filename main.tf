@@ -1,16 +1,18 @@
-resource "random_integer" "number1" {
+resource "random_integer" "number" {
   max=100
   min = 1
 }
 
 resource "random_string" "name" {
-  length = 7
+  length = 12
+}
+
+
+output "number" {
+  value = random_integer.number.result
 }
 
 output "name" {
   value = random_string.name.result
 }
 
-output "number" {
-  value = random_integer.number1.result
-}
