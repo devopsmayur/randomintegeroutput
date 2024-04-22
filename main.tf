@@ -1,10 +1,10 @@
 resource "random_integer" "number" {
-  max=100
+  max=1000
   min = 1
 }
 
 resource "random_string" "name" {
-  length = 4
+  length = 16
 }
 
 
